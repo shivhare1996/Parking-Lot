@@ -1,0 +1,65 @@
+1. When there is wrong Input command come, other than these commands
+
+a. "Create_parking_lot 6"
+b. "Park KA-01-HH-1234 driver_age 21"
+c. "Slot_numbers_for_driver_of_age 21"
+d. "Slot_number_for_car_with_number PB-01-HH-1234"
+e. "Leave 2"
+f. "Vehicle_registration_number_for_driver_of_age 18"
+
+Output : "Sorry, Wrong command entered"
+
+
+2. Assuming first command will be -> "Create_parking_lot 6" and will be encountered once.
+
+3. Input Command :  "Park KA-01-HH-1234 driver_age 21" but we already have parked this Registration number in out parking lot,
+
+Output : "Invalid Request as this vehicle is already parked KA-01-HH-1234"
+
+4. Input Command : "Slot_numbers_for_driver_of_age 21" but there are no such driver age present in parking
+
+Output : No parking found with the age 18 of user
+
+5. Input Command : "Slot_number_for_car_with_number PB-01-HH-1234" but there are no vehicle parked with that registration number
+
+Output : "Invalid Request as this vehicle is not parked"
+
+6. Input Command :  "Park KA-01-HH-1234 driver_age 21" but we don't have any space in our parking lot
+
+Output : "Sorry, Parking lot is full"
+
+7. Input Command : "Leave 2"  but there are no vehicle parked at that slot
+
+Output : "Invalid Request as slot 2 is already empty"
+
+8. Input Command : "Leave 100" but our parking lot is only of size 10 or of size < 100
+
+Output : "Invalid Slot Request"
+
+9. Input Command : "Vehicle_registration_number_for_driver_of_age 18" but there is no driver of that particular age
+
+Output : No parking found with the age 18 of user
+
+10. Input Command : "Vehicle_registration_number_for_driver_of_age 18"
+
+Output : "KA-01-HH-1234", "KA-01-HH-1123"
+
+
+
+/** As all the inputs integer will be [0,1000] : proper checks **/
+
+1. If path not found
+
+Output : No file found at path specified
+
+2. If Error in reading input line
+
+Output : Error in reading the input file
+
+3. If Invalid Input (other than specified provided string)
+
+Output: Invalid Input
+
+
+//Assuming First line will be "Create_parking_lot N"
+
