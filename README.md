@@ -92,7 +92,7 @@ Implemented 2 Strategies for Parking Service.
 
 2. TreeSet Strategy which uses O(log(n)) time for all the operations
 
-Default Strategy is Simple Array Strategy, to change to TreeSet Strategy pass ~1~ while fetching ParkingStrategy instance in Parking Strategy Factory.
+Default Strategy is  TreeSet Strategy, to change to Simple Array Strategy pass ~0~ while fetching ParkingStrategy instance in Parking Strategy Factory.
 ```
 
 # Build Instructions
