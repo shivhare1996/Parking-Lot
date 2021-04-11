@@ -18,7 +18,7 @@ c) Slot numbers of all slots where cars of drivers of a particular age are parke
 We interact with the system via file based input system i.e. it should accept a filename as an input. The file referenced by filename will contain a set of commands seperated by a newline, we need to execute the commands in order and produce output. 
 All the numbers will be under 1000
 
-###Example: File Input
+### Example: File Input
 
 To run the program:
 
@@ -68,7 +68,7 @@ Car with vehicle registration number "HR-29-TG-3098" has been parked at slot num
 No parking found with the age 18 of user
 ```
 
-###Assumptions 
+### Assumptions 
 1. Registration Numbers of all cars will be of same length(13) and will be following the same format(example : "KA-01-HH-1234")
 2. There'll be only one Create_parking_lot in complete test file and it'll be at the beginning of the file 
 3. All cars will have a distinct unique registration number
@@ -76,12 +76,12 @@ No parking found with the age 18 of user
 5. ~If the command is incorrect will print **"Sorry, Wrong command entered"** and carry instructions for further commands
 6. ~Printing **"Sorry, Parking lot is full"** when there is a request to park a cark and parking lot is full
 
-#Project Requirements
+# Project Requirements
 
 * JDK 1.8.
 * Maven 3. (3.6.3) 
 
-#Chosing Strategy
+# Parking Lot Strategy
 ```
 Implemented 2 Strategies for Parking Service. 
 
@@ -95,7 +95,7 @@ Implemented 2 Strategies for Parking Service.
 Default Strategy is Simple Array Strategy, to change to TreeSet Strategy pass ~1~ while fetching ParkingStrategy instance in Parking Strategy Factory.
 ```
 
-#Build Instructions
+# Build Instructions
 
 Run the following command -
 ```sh
