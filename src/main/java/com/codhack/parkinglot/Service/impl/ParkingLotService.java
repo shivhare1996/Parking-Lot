@@ -184,13 +184,13 @@ public class ParkingLotService implements IParkingLotService {
     }
 
     public static IParkingLotService getInstance(){
-//        if(parkingLotService == null){
-//            parkingLotService = new ParkingLotService();
-//        }
-//
-//        return parkingLotService;
-        parkingLotService = new ParkingLotService();
+        if(parkingLotService == null){
+            parkingLotService = new ParkingLotService();
+        }
+
         return parkingLotService;
+//        parkingLotService = new ParkingLotService();
+//        return parkingLotService;
     }
 
 
